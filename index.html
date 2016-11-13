@@ -2,10 +2,19 @@
 <html lang="en">
   <head>
     <title>Personal Webpage</title>
-    <script src="moveit.js"></script>
+    <!--<script type="text/javascript" src="default.js"></script>-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#page-content").load('AboutMe.php');
 
-
+      $("li").click(function(){
+          var page = $(this).attr("id");
+          $("#page-content").load(page + '.php');
+      });
+    });
+    </script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,17 +29,29 @@
   <body>
     <div class="container-fluid height-adjust" id="top-contain">
       <div class="row col-md-13" id="banner-top">
-        <p>Something</p>
+        <div class="container" id="quote-contain">
+          <div class="col-md-12" id="quote"><p  id="quote-block">"We are all connected; To each other, biologically.
+            To the earth, chemically. To the rest of the universe atomically."</p>
+                <italic><p>- Neil deGrasse Tyson</p></italic>
+          </div>
+          <div class="col-md-12" id="quote"><p id="quote-block">"The universe has a much greater imagination than we do,
+            which is why the real story of the universe is far more interesting than any of the fairy tales we have invented to describe it."</p>
+                <italic><bold><p>- Lawrence M. Krauss</p></bold></italic>
+          </div>
+          </div>
+        </div>
       </div>
+      </div>
+
     </div>
 
-    <nav class="nav nav-inverse">
-      <div class="container-fluid">
+    <nav class="nav">
+      <div class="container-fluid col-md-12">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Experience</a></li>
-            <li><a href="#">Porjects</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Link</li>
+            <li id="AboutMe"><a href="#">About Me</a></li>
+            <li id="Exp"><a href="#">Experience</a></li>
+            <li id="Projects"><a href="#" >Projects</a></li>
+            <li id="SocialMedia"><a href="#">Social Media</a></li>
           </ul>
         </div>
     </nav>
