@@ -10,22 +10,66 @@ html, body{
 }
 
 #top-contain{
-  background-color: #4ba405;
+  width: 100%;
+  color: #feffff;
+  text-align: center;
+  font-style: italic;
+  position: relative;
 
 }
+
+#name{
+  position: relative;
+}
+
 #banner-top{
-  background-color: #a4a405;
   height: 100%;
-  background-image: url(https://i.ytimg.com/vi/ttz4Sr0tZFg/maxresdefault.jpg);
+  background-image: url('photos/banner.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
 }
 
+@keyframes movQuote{
+
+  0%{top: 120px; opacity: 0;}
+  12%{top: 0px; opacity: 1;}
+  35%{top: 0px; opacity: 0;}
+  48%{top: -360px; opacity: 0;}
+  65%{top: -480px; opacity: 1;}
+  90%{top: -480px; opacity: 0;}
+  100%{top: -480px; opacity: 0;}
+
+
+
+}
+
+#quote-contain{
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+  height: 240px;
+  font-size: 20px;
+  overflow: hidden;
+
+}
+
+#quote{
+  animation: movQuote 10s ease-in infinite;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  position: relative;
+  height: 480px;
+
+}
 
 #page-content{
 
   background-color: #2f73bb;
   height: 59.5%;
+  overflow: hidden;
+  position: relative;
 }
 
 
