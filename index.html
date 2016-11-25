@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Personal Webpage</title>
+    <meta charset="utf-8">
+    <title>Jordan Beasley</title>
     <!--<script type="text/javascript" src="default.js"></script>-->
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
@@ -16,27 +16,23 @@
     });
     </script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
   </head>
 
   <body>
-    <div class="container-fluid height-adjust" id="top-contain">
+    <div class="container-fluid height-adjust col-md-12" id="top-contain">
       <div class="row col-md-13" id="banner-top">
         <div class="container" id="quote-contain">
           <div class="col-md-12" id="quote"><p  id="quote-block">"We are all connected; To each other, biologically.
             To the earth, chemically. To the rest of the universe atomically."</p>
-                <italic><p>- Neil deGrasse Tyson</p></italic>
+                <p>- Neil deGrasse Tyson</p>
           </div>
           <div class="col-md-12" id="quote"><p id="quote-block">"The universe has a much greater imagination than we do,
             which is why the real story of the universe is far more interesting than any of the fairy tales we have invented to describe it."</p>
-                <italic><bold><p>- Lawrence M. Krauss</p></bold></italic>
+                <p>- Lawrence M. Krauss</p>
           </div>
           </div>
         </div>
@@ -45,19 +41,19 @@
 
     </div>
 
-    <nav class="nav">
+    <nav class="nav col-md-12">
       <div class="container-fluid col-md-12">
-          <ul class="nav navbar-nav">
-            <li id="AboutMe"><a href="#">About Me</a></li>
-            <li id="Exp"><a href="#">Experience</a></li>
-            <li id="Projects"><a href="#" >Projects</a></li>
-            <li id="SocialMedia"><a href="#">Social Media</a></li>
+          <ul class="nav navbar-nav col-md-12">
+            <li id="AboutMe"><a href="#" class="navTag">About Me</a></li>
+            <li id="Exp"><a href="#" class="navTag">Experience</a></li>
+            <li id="Projects"><a href="#"  class="navTag">Projects</a></li>
+            <li id="SocialMedia"><a href="#" class="navTag">Social Media</a></li>
+            <u><p id="NavNameTag">Jordan Beasley</p><u>
           </ul>
         </div>
     </nav>
 
-    <div class="container-fluid" id="page-content">
+    <div class="container-fluid col-md-12" id="page-content">
     </div>
-
   </body>
 </html>
