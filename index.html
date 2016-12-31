@@ -5,22 +5,14 @@
     <title>Jordan Beasley</title>
     <!--<script type="text/javascript" src="default.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $("#page-content").load('AboutMe.php');
-
-      $("li").click(function(){
-          var page = $(this).attr("id");
-          $("#page-content").load(page + '.php');
-      });
-    });
-    </script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 
   </head>
+
 
   <body>
     <div class="container-fluid height-adjust col-md-12" id="top-contain">
@@ -48,12 +40,22 @@
             <li id="Exp"><a href="#" class="navTag">Experience</a></li>
             <li id="Projects"><a href="#"  class="navTag">Projects</a></li>
             <li id="SocialMedia"><a href="#" class="navTag">Social Media</a></li>
-            <u><p id="NavNameTag">Jordan Beasley</p><u>
+            <u><p id="NavNameTag">Jordan Beasley</p></u>
           </ul>
         </div>
     </nav>
-
-    <div class="container-fluid col-md-12" id="page-content">
+    <div class="container-fluid" id="page-content">
     </div>
+    <script>
+    $(document).ready(function(){
+      //$("#page-content").load('AboutMe.php');
+      $("#page-content").load('Exp.php');
+
+      $("li").click(function(){
+          var page = $(this).attr("id");
+          $("#page-content").load(page + '.php');
+      });
+    });
+    </script>    
   </body>
 </html>

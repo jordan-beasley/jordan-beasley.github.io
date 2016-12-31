@@ -5,7 +5,7 @@ html, body{
 
 .height-adjust{
 
-  height: 50%;
+  height: 40%;
 
 }
 
@@ -46,7 +46,7 @@ html, body{
 }
 
 #quote-contain{
-  margin-top: 80px;
+  margin-top: 70px;
   text-align: center;
   position: relative;
   height: 240px;
@@ -105,12 +105,12 @@ html, body{
 */
 #content-container{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  /*font-size: 86px;
-  background-color: #40f318;*/
+  /*font-size: 86px;*/
+  background-color: #2f73bb;
   margin-top: 20px;
   height: 90%;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 0px 0px 25px 2px #222820;
+  box-shadow: 0px 12px 25px 2px #222820;
   overflow: auto;
 }
 
@@ -138,6 +138,21 @@ html, body{
   float: right;
   margin: 15px 15px 15px 0px;
   text-align: center;
+  border-radius: 100px;
 
+}
 
+/*
+* Experience
+*
+*/
+
+.exp-card{
+  background-color: #a59e9e;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25%;
+  height: 250px;
+  align-content: center;
+  position: relative;
 }

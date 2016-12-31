@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
+  <head>
+  </head>
+  <body>
 
-<h1>Experience</h1>
+    <div class="container-fluid">
+      <div class="exp-card col-md-6">
+        <p>Filler text</p>
+      </div>
+      <div class="exp-card col-md-6">
+        <p>Filler text</p>
+      </div>
+    </div>
 
 
-</body>
+
+  </body>
 </html>
